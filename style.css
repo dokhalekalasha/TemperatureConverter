@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+}
+body{
+    background-color: #E0E0E0;
+}
+h1{
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    font-size: 25px;
+    padding-top: 35px;
+    color: #878787;
+}
+.wrapper{
+    width: 600px;
+    background-color: #ffffff;
+    padding: 70px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    box-shadow: 0 20px 35px rbga(0,0,0,0.25);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container1{
+    margin-left: 18px;
+    flex-basis: 40%;
+}
+.container2{
+ 
+    flex-basis: 40%;
+    margin-right: 0;
+}
+input{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #d2d2d2;
+    outline: none;
+    margin-top: 8px;
+    padding: 0 10px;
+}
+input:focus{
+    border-color: #3164ff;
+}
+label{
+    padding: 0 10px;
+}
+/*------------css for small screen-----*/
+@media only screen and (max-width: 600px){
+    
+    .wrapper{
+        top: 45%;
+        height: 350px;
+        width: 300px;
+        display: block;
+        margin-top: 40px;
+        font-size: 50px;
+    }
+    label{
+        font-size: 30px;
+        padding: 10px 10px;
+    }
+    .container1{
+        margin-left: 0;
+        padding-left: 10px;
+    }
+    .container2{
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+    h1{
+        font-size: 40px;
+        padding-top: 42px;
+    }
+    
+}
